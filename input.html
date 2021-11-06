@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/c/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Home Page - Projetinho </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projetinho.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus icon'></i>
+        <div class="logo_name">Projetinho</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Buscar...">
+         <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="index.html">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+       <a href="perfil.html">
+         <i class='bx bx-user'></i>
+         <span class="links_name">Usuário</span>
+       </a>
+       <span class="tooltip">Usuário</span>
+     </li>
+     <li>
+       <a href="input.html">
+         <i class='bx bx-chat' ></i>
+         <span class="links_name">Inserção de Dados</span>
+       </a>
+       <span class="tooltip">Inserção de Dados</span>
+     </li>
+     <li>
+       <a href="historico.html">
+         <i class='bx bx-pie-chart-alt-2' ></i>
+         <span class="links_name">Histórico</span>
+       </a>
+       <span class="tooltip">Histórico</span>
+     </li>
+     <li>
+       
+     <li class="profile">
+         <div class="profile-details">
+           <img src="profile.jpg" alt="profileImg">
+           <div class="name_job">
+             <div class="name">Wanderley Neto</div>
+             <div class="job">Fisiculturista</div>
+           </div>
+         </div>
+         <a href="login.html">
+          <button> <i class='bx bx-log-out' id="log_out" ></i>  </button>
+        </a>
+     </li>
+    </ul>
+  </div>
+  <section class="home-section">
+      <div class="text">Inserção de Dados</div>
+      <br>
+      <p style="right: auto; color: white; size: 10px;">
+        <fieldset id="main">
+            <center>
+     
+            <legend>Treinou? Comeu? Registra aí!</legend>
+            <br>
+            
+            <label for="Titulo">Ingestão de Calorias </label>
+            <input type="number" name="ingestaocal" id="ingestaocal"> <br>
+            <br>
+            <label for="telefone">Gasto de Calorias </label>
+            <input type="number" name="consumocal" id="consumocal"> <br>
+            <br>
+            <br>
+            <button>Atualizar</button>
+          
+        </center>
+    
+        </fieldset>
+       </p>
+   </section>
+
+   
+  </fieldset>
+
+
+
+  <script src="script.js"></script>
+
+  
+
+</body>
+</html>
