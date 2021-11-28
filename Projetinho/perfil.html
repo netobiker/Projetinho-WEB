@@ -1,130 +1,212 @@
 <!DOCTYPE html>
-<!-- Created by CodingLab |www.youtube.com/c/CodingLabYT-->
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-    <title> Home Page - Projetinho </title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="projetinho.css">
-    <!-- Boxicons CDN Link -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Seu Perfil - Projetinho</title>
+		
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+		<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style type="text/css" title="MiltinEstilo1" media="all">
+			
+			* {
+				font-family: 'Ubuntu', sans-serif;	
+				margin: 0;
+				padding: 0;
+			}
+			
+			body {
+				font-family: 'Ubuntu', sans-serif;
+				text-align: center;
+				background-color:#11101D;
+				
+			}
+					
+			
+			.header {
+					
+			}
+			
+			.header > h1 {
+				
+				color: white;
+				padding: 15px;
+			}
+			
+			.header > p {
+				padding: 15px;
+			}
+			
+			.header > img {
+				width:200px;
+				border-radius: 10%;
+				filter: grayscale(1);
+				transition: .3s;
+				cursor: pointer;
+			}
+			
+			img.ico {
+				margin-top: 15px;
+				width:20px;
+				border-radius: 10%;
+				filter: grayscale(1);
+				cursor: pointer;
+			}
+			
+			img:hover {
+				<!-- background-color: #f00; -->
+				cursor: pointer;
+				filter: grayscale(0);
+				border-radius: 50%;
+				box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+			}
+			
+			.about {
+				border-radius: 25px;
+				background-color: #fff;
+				margin-left: 300px;
+				margin-right: 300px;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				padding: 10px;
+			}
+			
+			.about > h1 {				
+				color: #1C1C1C;
+				padding: 10px;
+				font-size: 1.25em;
+			}
+			
+			.detalhes > h1 {				
+				color: #1C1C1C;
+				padding: 10px;
+				font-size: 1.25em;
+			}
+			
+			.negrito {
+				font-weight: 700;				
+			}
+			
+			p {
+				color: #404040;
+				padding: 20px;
+			}
+						
+			
+			
+		</style>
+		
+	</head>
+		
+	<body>	
+		<div class="sidebar">
+			<div class="logo-details">
+			  <i class='bx bx-walk icon'></i>
+				<div class="logo_name">Projetinho</div>
+				<i class='bx bx-menu' id="btn" ></i>
+			</div>
+			<ul class="nav-list">
+			  <li>
+				<a href="index.html">
+				  <i class='bx bx-grid-alt'></i>
+				  <span class="links_name">Dashboard</span>
+				</a>
+				 <span class="tooltip">Dashboard</span>
+			  </li>
+			  <li>
+			   <a href="perfil.html">
+				 <i class='bx bx-user'></i>
+				 <span class="links_name">Usuário</span>
+			   </a>
+			   <span class="tooltip">Usuário</span>
+			 </li>
+			 <li>
+			   <a href="input.html">
+				 <i class='bx bx-chat' ></i>
+				 <span class="links_name">Inserção de Dados</span>
+			   </a>
+			   <span class="tooltip">Inserção de Dados</span>
+			 </li>
+			 <li>
+			   <a href="historico.html">
+				 <i class='bx bx-pie-chart-alt-2' ></i>
+				 <span class="links_name">Histórico</span>
+			   </a>
+			   <span class="tooltip">Histórico</span>
+			 </li>
+			 <li>
+			   
+			 <li class="profile">
+				 <div class="profile-details">
+				   <img src="profile.jpg" alt="profileImg">
+				   <div class="name_job">
+					 <div class="name">Wanderley Neto</div>
+					 <div class="job">Fisiculturista</div>
+				   </div>
+				 </div>
+				 <a href="login.html">
+				  <button> <i class='bx bx-log-out' id="log_out" ></i>  </button>
+				</a>
+			 </li>
+			</ul>
+		  </div>
+	<div class="header">
+		
+		 <h1>Wanderley Lobregat Neto</h1>
+		<br>		
+ 
+		 <img class="avatar" src="neto.JFIF" alt="Avatar">
+	</div>
+	
+	<div class="about">
+		<h1>Sobre mim</h1>
+		<p>
+			Data de Nascimento: 28 de Novembro de 1993 <br>
+			Idade: 28 anos <br>
+			Cadastrado em: 16 de setembro de 2020 <br>
+			email: neto@email.com.br 
+		</p>
 
-<body>
-  <div class="sidebar">
-    <div class="logo-details">
-      <i class='bx bxl-c-plus-plus icon'></i>
-        <div class="logo_name">Projetinho</div>
-        <i class='bx bx-menu' id="btn" ></i>
-    </div>
-    <ul class="nav-list">
-      <li>
-          <i class='bx bx-search' ></i>
-         <input type="text" placeholder="Buscar...">
-         <span class="tooltip">Search</span>
-      </li>
-      <li>
-        <a href="index.html">
-          <i class='bx bx-grid-alt'></i>
-          <span class="links_name">Dashboard</span>
-        </a>
-         <span class="tooltip">Dashboard</span>
-      </li>
-      <li>
-       <a href="perfil.html">
-         <i class='bx bx-user'></i>
-         <span class="links_name">Usuário</span>
-       </a>
-       <span class="tooltip">Usuário</span>
-     </li>
-     <li>
-       <a href="input.html">
-         <i class='bx bx-chat' ></i>
-         <span class="links_name">Inserção de Dados</span>
-       </a>
-       <span class="tooltip">Inserção de Dados</span>
-     </li>
-     <li>
-       <a href="historico.html">
-         <i class='bx bx-pie-chart-alt-2' ></i>
-         <span class="links_name">Histórico</span>
-       </a>
-       <span class="tooltip">Histórico</span>
-     </li>
-     <li>
-       
-     <li class="profile">
-         <div class="profile-details">
-           <img src="profile.jpg" alt="profileImg">
-           <div class="name_job">
-             <div class="name">Wanderley Neto</div>
-             <div class="job">Fisiculturista</div>
-           </div>
-         </div>
-         <a href="login.html">
-          <button> <i class='bx bx-log-out' id="log_out" ></i>  </button>
-        </a>
-     </li>
-    </ul>
-  </div>
-  <section class="home-section">
-      <div class="text">Meu Perfil</div>
-      <br>
-      <p style="right: auto; color: white; size: 10px;">
-        <fieldset id="main">
-            <center>
-                <img src="https://media-exp1.licdn.com/dms/image/C4E03AQG1wSwYD8fRlw/profile-displayphoto-shrink_800_800/0/1517486400540?e=1640217600&v=beta&t=j9toKSOtPSsBaj5bI7AEDstV76wTrXmVvTU9IjzpKlU">
-                <br>
-        <p style="right: auto; color: white; size: 9px;">Wanderley Lobregat Neto
-        <br>
-        Peso: 68 Kg
-        <br>
-        Altura: 173 Cm
-        <br>
-        Meta: 2000 Kcal\dia
-        <br>
-        Objetivo: Manter o peso atual
-        </p>
-        </center>
-        </fieldset>
-    
-        <fieldset id="main">
-            <center>
-     
-            <legend>Teve progresso? Atualize seus dados</legend>
-            <br>
-            
-            <label for="Titulo">Altura (cm) </label>
-            <input type="number" name="altura" id="altura"> <br>
-            <br>
-            <label for="telefone">Peso Atual (kg) </label>
-            <input type="number" name="itens" id="itens"> <br>
-            <br>
-            <label for="meta">Qual sua meta?:</label>
-            <select name="meta" id="meta" form="metaforn">
-                    <option value="volvo">Ganhar peso</option>
-                    <option value="saab">Manter peso</option>
-                    <option value="opel">Perder peso</option>
-            </select>
-            <br>
-            <br>
-            <button>Atualizar</button>
-          
-        </center>
-    
-        </fieldset>
-       </p>
-   </section>
+		
+	
 
-   
-  </fieldset>
+		<h1>Dados de Varíaveis</h1>
+			
+			<span class="negrito">Peso e Altura</span> 
+			<p>
+				<label for="Titulo">Altura (cm): </label>
+				<input type="number" name="Altura" id="altura"> <br>
+				<label for="Titulo">Peso (Kg): </label>
+            <input type="number" name="peso" id="peso" step=0.01> <br>
+				Taxa Metabolica Basal (TMB): 	
+			</p>
+			<span class="negrito">Objetivo Atual:</span> 
+			<p>
+				<select id="obj" name="objetivo">
+				  <option value="ganhar">Ganhar peso</option>
+				  <option value="manter">Manter o pesol atual</option>
+				  <option value="perder">Perder peso</option>
+				</select>
+				<br>
+				<br>
+			Voce deve consumir diariamente 1500 kcal
+			</p>
+			
 
 
-
-  <script src="script.js"></script>
-
-  
-
-</body>
+	
+			
+			<a href =https://www.instagram.com/toguro target="_blank"> <img src="ico_insta.png" class="ico"/></a>
+			<a href =https://twitter.com/paulomuzy target="_blank"><img src="ico_twitter.png"  class="ico"/></a>
+			<a href =https://www.facebook.com/renatocarianiatleta target="_blank"><img src="ico_facebook.png" class="ico"/></a>
+			
+	</div>	
+	
+	
+	<script src="script.js"></script>
+	</body>
 </html>

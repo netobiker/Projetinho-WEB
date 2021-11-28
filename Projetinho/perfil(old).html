@@ -14,11 +14,16 @@
 <body>
   <div class="sidebar">
     <div class="logo-details">
-      <i class='bx bx-walk icon'></i>
+      <i class='bx bxl-c-plus-plus icon'></i>
         <div class="logo_name">Projetinho</div>
         <i class='bx bx-menu' id="btn" ></i>
     </div>
     <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Buscar...">
+         <span class="tooltip">Search</span>
+      </li>
       <li>
         <a href="index.html">
           <i class='bx bx-grid-alt'></i>
@@ -63,25 +68,57 @@
      </li>
     </ul>
   </div>
-  <div class="about">
-   
-            <b> Treinou? Comeu? Registra aí! </b>
+  <section class="home-section">
+      <div class="text">Meu Perfil</div>
+      <br>
+      <p style="right: auto; color: white; size: 10px;">
+        <fieldset id="main">
+            <center>
+                <img src="https://media-exp1.licdn.com/dms/image/C4E03AQG1wSwYD8fRlw/profile-displayphoto-shrink_800_800/0/1517486400540?e=1640217600&v=beta&t=j9toKSOtPSsBaj5bI7AEDstV76wTrXmVvTU9IjzpKlU">
+                <br>
+        <p style="right: auto; color: white; size: 9px;">Wanderley Lobregat Neto
+        <br>
+        Peso: 68 Kg
+        <br>
+        Altura: 173 Cm
+        <br>
+        Meta: 2000 Kcal\dia
+        <br>
+        Objetivo: Manter o peso atual
+        </p>
+        </center>
+        </fieldset>
+    
+        <fieldset id="main">
+            <center>
+     
+            <legend>Teve progresso? Atualize seus dados</legend>
+            <br>
+            
+            <label for="Titulo">Altura (cm) </label>
+            <input type="number" name="altura" id="altura"> <br>
+            <br>
+            <label for="telefone">Peso Atual (kg) </label>
+            <input type="number" name="itens" id="itens"> <br>
+            <br>
+            <label for="meta">Qual sua meta?:</label>
+            <select name="meta" id="meta" form="metaforn">
+                    <option value="volvo">Ganhar peso</option>
+                    <option value="saab">Manter peso</option>
+                    <option value="opel">Perder peso</option>
+            </select>
             <br>
             <br>
-            <label for="Titulo">Ingestão de Calorias </label>
-            <input type="number" name="ingestaocal" id="ingestaocal"> <br>
-            <br>
-            <label for="telefone">Gasto de Calorias</label>
-            <input type="number" name="consumocal" id="consumocal"> <br>
-            <button float-right>Atualizar</button>
+            <button>Atualizar</button>
           
-      </div>
-       
-  
- 
+        </center>
+    
+        </fieldset>
+       </p>
+   </section>
 
    
- 
+  </fieldset>
 
 
 
